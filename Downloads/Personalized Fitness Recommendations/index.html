@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>AI-Based Fitness Recommendations</h2>
+        <form id="fitnessForm">
+            <label for="goal">Select Your Goal:</label>
+            <select id="goal">
+                <option value="weight_loss">Weight Loss</option>
+                <option value="muscle_gain">Muscle Gain</option>
+                <option value="maintain">Maintain Fitness</option>
+            </select>
+
+            <label for="activity">Activity Level:</label>
+            <select id="activity">
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+            </select>
+
+            <button type="button" onclick="generatePlan()">Get Recommendations</button>
+        </form>
+
+        <div id="recommendations">
+            <h3>Diet & Workout Plan:</h3>
+            <p id="dietPlan"></p>
+            <p id="workoutPlan"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
